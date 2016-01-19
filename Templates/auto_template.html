@@ -1,0 +1,53 @@
+<div class="row nestedPage">
+    <div class="col-md-10">
+
+        <div class="row pageHeader">
+            <div class="col-md-12">
+                <span class="pageHeaderIcon"><img src="./Content/img/icon_captureregion.png" /></span> Data Capture Regions
+            </div>
+
+            <div class="col-md-12 addContainer">
+                <a class="btn btn-default" href="#CreateDataCaptureRegions"><span class="glyphicon glyphicon-plus-sign addButton"></span> Create Data Capture Region</a>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+
+
+                <table id="DataCaptureRegionsListTable" class="display cell-border" cellspacing="0" width="100%">
+                    <thead>
+                        <tr role="row">
+
+                            <th class="sorting"></th>
+                            <th class="sorting">make</th>
+							 <th class="sorting">year</th>
+							 <th class="sorting">price</th>
+                            <th class="sorting_asc_disabled sorting_desc_disabled"></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        {{#each this}}
+                        <tr>
+                            <td>{{make}}</td>
+                            <td>{{year}}</td>
+							 <td>{{price}}</td>
+                        </tr>
+                        {{/each}}
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hidden" id="returnData">
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#DataCaptureRegionsListTable').DataTable();
+    });
+</script> 

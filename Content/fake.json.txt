@@ -1,0 +1,218 @@
+{
+  "kind": "PodList",
+  "apiVersion": "v1",
+  "metadata": {
+    "selfLink": "/api/v1/namespaces/helloworld/pods",
+    "resourceVersion": "5441960"
+  },
+  "items": [
+    {
+      "metadata": {
+        "name": "helloworld-controller-p25mw",
+        "generateName": "helloworld-controller-",
+        "namespace": "helloworld",
+        "selfLink": "/api/v1/namespaces/helloworld/pods/helloworld-controller-p25mw",
+        "uid": "12501718-b4c5-11e5-9546-005056a24716",
+        "resourceVersion": "5372096",
+        "creationTimestamp": "2016-01-06T22:30:21Z",
+        "labels": {
+          "app": "helloworld"
+        },
+        "annotations": {
+          "kubernetes.io/created-by": "{\"kind\":\"SerializedReference\",\"apiVersion\":\"v1\",\"reference\":{\"kind\":\"ReplicationController\",\"namespace\":\"helloworld\",\"name\":\"helloworld-controller\",\"uid\":\"8b900bab-9aa6-11e5-84a1-005056a24716\",\"apiVersion\":\"v1\",\"resourceVersion\":\"5364716\"}}",
+          "openshift.io/scc": "restricted"
+        }
+      },
+      "spec": {
+        "volumes": [
+          {
+            "name": "tools",
+            "emptyDir": {}
+          },
+          {
+            "name": "default-token-3nigb",
+            "secret": {
+              "secretName": "default-token-3nigb"
+            }
+          }
+        ],
+        "containers": [
+          {
+            "name": "helloworld",
+            "image": "quay.cisco.com/tdeckers/helloworld",
+            "ports": [
+              {
+                "containerPort": 9000,
+                "protocol": "TCP"
+              }
+            ],
+            "resources": {},
+            "volumeMounts": [
+              {
+                "name": "tools",
+                "readOnly": true,
+                "mountPath": "/opt/tools"
+              },
+              {
+                "name": "default-token-3nigb",
+                "readOnly": true,
+                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount"
+              }
+            ],
+            "terminationMessagePath": "/dev/termination-log",
+            "imagePullPolicy": "Always",
+            "securityContext": {
+              "privileged": false,
+              "seLinuxOptions": {
+                "level": "s0:c15,c5"
+              }
+            }
+          }
+        ],
+        "restartPolicy": "Always",
+        "dnsPolicy": "ClusterFirst",
+        "host": "cpg-ostack-oshift-1.cisco.com",
+        "serviceAccountName": "default",
+        "serviceAccount": "default",
+        "nodeName": "cpg-ostack-oshift-1.cisco.com",
+        "imagePullSecrets": [
+          {
+            "name": "default-dockercfg-hbgzi"
+          }
+        ]
+      },
+      "status": {
+        "phase": "Running",
+        "conditions": [
+          {
+            "type": "Ready",
+            "status": "True"
+          }
+        ],
+        "hostIP": "64.102.212.137",
+        "podIP": "10.1.7.7",
+        "startTime": "2016-01-06T22:30:21Z",
+        "containerStatuses": [
+          {
+            "name": "helloworld",
+            "state": {
+              "running": {
+                "startedAt": "2016-01-06T22:36:14Z"
+              }
+            },
+            "lastState": {},
+            "ready": true,
+            "restartCount": 0,
+            "image": "quay.cisco.com/tdeckers/helloworld",
+            "imageID": "docker://d8d07acf9163b5b306eb96c47ca1606404bbe2bfe66dea453e9043b7928b05cf",
+            "containerID": "docker://1487ca7bf823446ab6411c68b74114209a9943835e8f7d6f5a568ef398407e9c"
+          }
+        ]
+      }
+    },
+    {
+      "metadata": {
+        "name": "helloworld-controller-ux47i",
+        "generateName": "helloworld-controller-",
+        "namespace": "helloworld",
+        "selfLink": "/api/v1/namespaces/helloworld/pods/helloworld-controller-ux47i",
+        "uid": "84aa0322-b3ef-11e5-9546-005056a24716",
+        "resourceVersion": "5258298",
+        "creationTimestamp": "2016-01-05T21:01:40Z",
+        "labels": {
+          "app": "helloworld"
+        },
+        "annotations": {
+          "kubernetes.io/created-by": "{\"kind\":\"SerializedReference\",\"apiVersion\":\"v1\",\"reference\":{\"kind\":\"ReplicationController\",\"namespace\":\"helloworld\",\"name\":\"helloworld-controller\",\"uid\":\"8b900bab-9aa6-11e5-84a1-005056a24716\",\"apiVersion\":\"v1\",\"resourceVersion\":\"5017753\"}}",
+          "openshift.io/scc": "restricted"
+        }
+      },
+      "spec": {
+        "volumes": [
+          {
+            "name": "tools",
+            "emptyDir": {}
+          },
+          {
+            "name": "default-token-3nigb",
+            "secret": {
+              "secretName": "default-token-3nigb"
+            }
+          }
+        ],
+        "containers": [
+          {
+            "name": "helloworld",
+            "image": "quay.cisco.com/tdeckers/helloworld",
+            "ports": [
+              {
+                "containerPort": 9000,
+                "protocol": "TCP"
+              }
+            ],
+            "resources": {},
+            "volumeMounts": [
+              {
+                "name": "tools",
+                "readOnly": true,
+                "mountPath": "/opt/tools"
+              },
+              {
+                "name": "default-token-3nigb",
+                "readOnly": true,
+                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount"
+              }
+            ],
+            "terminationMessagePath": "/dev/termination-log",
+            "imagePullPolicy": "Always",
+            "securityContext": {
+              "privileged": false,
+              "seLinuxOptions": {
+                "level": "s0:c15,c5"
+              }
+            }
+          }
+        ],
+        "restartPolicy": "Always",
+        "dnsPolicy": "ClusterFirst",
+        "host": "cpg-oshift2-node3.cisco.com",
+        "serviceAccountName": "default",
+        "serviceAccount": "default",
+        "nodeName": "cpg-oshift2-node3.cisco.com",
+        "imagePullSecrets": [
+          {
+            "name": "default-dockercfg-hbgzi"
+          }
+        ]
+      },
+      "status": {
+        "phase": "Running",
+        "conditions": [
+          {
+            "type": "Ready",
+            "status": "True"
+          }
+        ],
+        "hostIP": "10.42.136.130",
+        "podIP": "10.1.1.73",
+        "startTime": "2016-01-05T21:01:42Z",
+        "containerStatuses": [
+          {
+            "name": "helloworld",
+            "state": {
+              "running": {
+                "startedAt": "2016-01-05T21:01:58Z"
+              }
+            },
+            "lastState": {},
+            "ready": true,
+            "restartCount": 0,
+            "image": "quay.cisco.com/tdeckers/helloworld",
+            "imageID": "docker://d8d07acf9163b5b306eb96c47ca1606404bbe2bfe66dea453e9043b7928b05cf",
+            "containerID": "docker://6d5d14570ec6ba34549b9339e5678b7474ae68220f662b3ad305c64e9ffa87c4"
+          }
+        ]
+      }
+    }
+  ]
+}

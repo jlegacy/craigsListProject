@@ -1,0 +1,43 @@
+   
+<div class="row loginPage">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="panelParentHeader">
+                    <div class="col-md-4">
+                        <img src="./Content/Img/ciscoImage2.jpg" class="panelLogo img-responsive" />
+                    </div>
+                    <div class="col-md-offset-4">
+                        <div class="col-md-12"><span class="panelTitle"><span class="logoSecure">Cloud</span><span class="logoDocs">Incubation</span></span></div>
+                        <div class="col-md-12"><span class="versionTitle">v1.0</span></div>
+                    </div>
+                </div>
+                
+                <form id="securityForm" method="post" role="form">
+                    <div class="panel panel-default">
+                        <div class="panel-body panelBody">
+                            <div class="col-md-12"><span class="panelHeader">Sign In</span></div>
+
+                            <div class="form-group col-md-12">
+                                <label for="UserName">Username</label>
+                                <input class="form-control userCredentials" id="UserName" name="username" type="text" value="">
+                            </div>
+
+                            <div class="form-group col-md-12">
+                                <label for="Password">Password</label>
+                                <input class="form-control userCredentials" id="Password" name="password" type="password" value="">
+
+                            </div>
+
+                        </div>
+                        <div class="panel-footer panelFooterNav">
+
+                            <div><button id="submitSecurity" type="button" class="btn btnKermit" name="btnSignIn">Sign In</button></div>
+                        </div>
+                    </div>
+                    <input type="hidden" value="password" name="grant_type">
+                 </form>
+            </div>
+        </div>
+    </div>
+</div>

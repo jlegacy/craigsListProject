@@ -1,0 +1,542 @@
+﻿body
+{
+   font-family: 'Open Sans', sans-serif;
+}
+
+.loginPage {
+    margin: auto;
+    width: 30%;
+    padding-top: 6em;
+
+}
+
+.container {
+    width: 95%;
+}
+
+.nestedPage {
+	margin-top: 20px;
+    padding-left: 55px;
+
+}
+
+.error {
+	border: 1px solid red;
+}
+
+.errorText {
+	color:red;
+}
+
+#errorPanel{
+  width:auto;   /* adjust */
+  height:auto;  /* adjust */
+  top:60%;
+  left:60%;
+  margin-left: -250px;  /* half of the width */
+  margin-top: -250px;  /* half of the height */
+  position:fixed;
+  background:white;
+  z-index:9999;
+  border:1px solid red;
+  border-radius:10px;
+}
+
+ .mainArea {
+      margin-top: 5em;
+      margin-left: 0em;
+      padding-top: 1em;
+      padding-left: 1em;
+    }
+
+.topLineNavArea {
+  height: 33px;
+	  padding-top: .1em;
+	  border-top-right-radius: 4px;
+	  border-top-left-radius: 4px;
+	  padding-bottom: 1.3em;
+	  background-color: #285f7e;
+}
+
+.topLineNav {
+      margin-top: .4em;
+      padding-left: .6em;
+      color: white;}
+
+.topLineNav a {
+     color: #F4F4F4;
+}
+
+.topLineNavImageTextSeparator {
+    margin-right: .4em;
+}
+    
+.topNavBarHeader {
+    margin-left: 3em;
+}
+
+.aaa {
+    float: left;
+}
+
+.troyLogo {
+    /*margin-top: .4em;
+    margin-bottom: .4em;*/
+    height: 20px;
+    padding-left: 40px;
+}
+
+.helpIcon {
+    float: right !important;
+    padding-right: 70px;
+    color: #ffffff;
+    font-size: 18px;
+}
+.Logo {
+    margin-top: .4em;
+    margin-bottom: .4em;
+    height: 35px;
+}
+
+.bottomLineNavArea {
+      background-color: #2583b9;
+}
+
+.dragDropGraphic {
+      background-image: url("./img/SortIcon.png");
+      width:30px;
+	  height:30px;
+	  padding:5px;
+      background-repeat:no-repeat;
+      background-position: center center;
+}
+
+
+
+li.string-container {
+     list-style-type: none;
+	 padding:5px;
+}
+
+.handle {
+    padding: 0 5px;
+    margin-right: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: move;
+}
+
+.busyindicatorClass {
+      background-image: url("./img/ajax-loader.gif");
+      background-color: #cccccc;
+      height:100%;
+      z-index:1;
+      width:100%;
+      position:absolute;
+      background-repeat:no-repeat;
+      background-position: center center;
+      opacity: .7;
+	  filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+ .navbar-default {
+  background-color: #2583b9;
+  border-color: #ffffff;
+}
+.navbar-default .navbar-brand {
+  color: #ffffff;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #000000;
+}
+.navbar-default .navbar-text {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #000000;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+.navbar-default .navbar-toggle {
+  border-color: #ffffff;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ffffff;
+}
+.navbar-default .navbar-link {
+  color: #ffffff;
+}
+.navbar-default .navbar-link:hover {
+  color: #000000;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #000000;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #000000;
+    background-color: #ffffff;
+  }
+}
+
+.mainNavLinks {
+    padding-left: 4em;
+}
+
+.userIcon {
+    color: white;
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+.panelTitle {
+    color: #2583b9;
+    font-size:20px;
+    float: right;
+}
+.panelLogo {
+    margin-bottom: .8em;
+    height: 57px;
+}
+
+
+.versionTitle {
+    color: #2583b9;
+    font-size: 12px;
+    float: right;
+}
+
+.panelHeader {
+    color: #2583b9;
+    font-size: 20px;
+    float: left;
+    padding-bottom: 1em;
+}
+
+.panelParentHeader {
+    padding-bottom: 5em;
+}
+
+.userCredentials {
+    width: 300px;
+
+}
+
+.panelBody {
+    background-color: #f9f9f9;
+}
+
+.panelFooterNav {
+    background-color: #f2f2f2;
+}
+
+.panelHeaderNav {
+    background-color: #f2f2f2;
+}
+
+.btnKermit {
+    background-color: #70a71d;
+    color: white;
+}
+
+.CodeSnippet {
+    background-color: #2583b9;
+    height: 15px;
+    margin-bottom: 4em;
+}
+
+.pageHeader {
+    font-size: 30px;
+    color: grey;
+    padding-bottom: 1em;
+}
+
+.pageHeaderIcon {
+    color: #2583b9;
+    font-size: 30px;
+}
+
+.btnEdit {
+    float: right;
+}
+
+.userPanelHeader {
+    padding: .5em;
+    font-size: 20px;
+    color: grey;
+    background-color: #f2f2f2;
+}
+
+.userTable {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.userData {
+    padding-left: .7em;
+}
+
+.verticalLine {
+    border-left: thick solid #2583b9;
+}
+
+.helpTextHeader {
+    font-size: 16px;
+    font-weight: bold;
+    color: gray;
+}
+
+.helpText {
+    font-size: 12px;
+    font-weight: bold;
+    color: darkgray;
+}
+
+.pageHelpIcon {
+    color: #2583b9;
+    font-size: 16px;
+    padding-right: 3px;
+}
+
+.btnRight {
+    float: right;
+}
+
+.logoSecure {
+    font-family: "Arial";
+    font-size: 28px;
+    color: #2583b9;
+    font-weight: bolder;
+}
+
+.logoDocs {
+    font-family: "Arial";
+    font-size: 28px;
+    color: #2583b9;
+
+}
+
+.addButton {
+    color: #2583b9;
+    padding-right: .4em;
+}
+
+.addContainer {
+    padding-top: .5em;
+}
+
+.iconEnabled {
+    color: #70a71d;
+    font-size: 20px;
+}
+
+.iconDisabled {
+    color: red;
+    font-size: 20px;
+}
+
+.tdCenter{
+    text-align: center;
+}
+
+.todo {
+    background-color: yellow;
+}
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: red;
+  cursor: inherit;
+  display: block;
+}
+
+input[readonly] {
+  background-color: white !important;
+  cursor: text !important;
+}
+
+.opacityHolder {
+    display: inline-block;
+}
+
+.opacitySlider {
+    margin-top: 1em;
+}
+
+.opacityDigit {
+    border:0; 
+    color:#000000; 
+    font-weight:bold; 
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: .2em;
+}
+
+.rotationSlider {
+    margin-top: 1em;
+}
+
+.rotationDigit {
+    border:0; 
+    color:#000000; 
+    font-weight:bold; 
+    font-size: 20px;
+    padding-left: 20px;
+    /*padding-top: -2em;*/
+}
+
+
+.subLabel {
+    color: #285f7e;
+}
+
+.errorPage {
+    margin: auto;
+    width: 50%;
+    padding-top: 6em;
+    text-align: center;
+}
+
+.errorPageIcon {
+
+    color: #2583b9; 
+    font-size: 60px;
+    padding-top: 10px;
+}
+
+.btnErrorPage {
+    padding-top: 2em;
+
+}
+
+.coordBox {
+    width: 60px;
+    max-width: 60px;
+}
+
+.coordLabel {
+    color: #285f7e;
+    font-size:20px;
+    padding: .5em;
+}
+
+.positioningContainer {
+    margin-top: 2em;
+}
+
+.coordSubLabel {
+    color: #285f7e;
+    margin-top: 1em;
+}
+
+.coordFooterLabelContainer {
+    text-align: center;
+    font-style: italic;
+    color: #285f7e;
+}
+
+.addElementButton {
+    float: right;
+}
+
+.node {
+  cursor: pointer;
+}
+
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font: 15px sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+
+.node text .active{
+	font-color: green;
+}
+
+.node text .stopped {
+	font-color: red;
+}
+
+/* Styles for our labels */
+ .label {
+    font-family: arial, helvetica, 'sans-serif';
+    font-size: 24px;
+    text-anchor: middle;
+    alignment-baseline: text-before-edge;
+}
+.canvas {
+    position: absolute;
+}
+.popup {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    width: 250px;
+    border: 1px #ccc solid;
+    border-radius: 6px;
+    box-shadow: #333 2px 2px 4px;
+    padding: 8px;
+    font-family: arial, helvetica, sans-serif;
+}
+.popup h2 {
+    margin: 0 0 1rem 0;
+}
+/* Assign styles to bars based on division labels */
+ .com {
+    fill: goldenrod;
+}
+.sci {
+    fill: royalblue;
+}
+.ops {
+    fill: crimson;
+}
+
+#backdrop {
+    fill: oldlace;
+}
+
+
+
